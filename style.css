@@ -1,0 +1,62 @@
+.btn {
+  background: red;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 100px;
+}
+
+.btn:hover {
+  width: 300px;
+  background: blue;
+}
+
+.wrap {
+  width: 500px;
+  height: 500px;
+  margin: 50px 0 0;
+  border: 3px solid #000;
+}
+
+@keyframes box {
+  0% {
+    transform: translate(0, 0) rotate();
+    background: red;
+  }
+  24% {
+    transform: translate(450px, 0) rotate(0deg);
+  }
+  25% {
+    background: green;
+    transform: translate(450px, 0) rotate(-90deg);
+  }
+  49% {
+    transform: translate(450px, 450px) rotate(-90deg);
+  }
+  50% {
+    transform: translate(450px, 450px) rotate(-180deg);
+    background: blue;
+  }
+  74% {
+    transform: translate(0, 450px) rotate(-180deg);
+  }
+  75% {
+    transform: translate(0, 450px) rotate(-270deg);
+    background: black;
+  }
+  99% {
+    transform: translate(0, 0) rotate(-270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background: #ff0000;
+  /* transform: scale(2) translate(50px, 50px) rotate(45deg); */
+  animation: box 5s linear infinite;
+}

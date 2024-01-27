@@ -1,0 +1,74 @@
+.main {
+  background: black;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__content {
+  width: 400px;
+  height: 400px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+}
+
+@keyframes earth {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moon {
+  0% {
+    transform: translate(0, 0) rotate();
+  }
+  12.5% {
+    transform: translate(-50px, -150px) rotate(-45deg);
+  }
+  25% {
+    transform: translate(-200px, -200px) rotate(-90deg);
+  }
+  37.5% {
+    transform: translate(-350px, -150px) rotate(-135deg);
+  }
+  50% {
+    transform: translate(-400px, 0) rotate(-180deg);
+  }
+
+  62.5% {
+    transform: translate(-350px, 150px) rotate(-225deg);
+  }
+  75% {
+    transform: translate(-200px, 200px) rotate(-270deg);
+  }
+  87.5% {
+    transform: translate(-50px, 150px) rotate(-315deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+.earth {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  animation: earth 15s linear infinite;
+}
+
+.moon {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  animation: moon 8s linear infinite;
+}
